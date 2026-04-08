@@ -92,11 +92,9 @@ CREATE DATABASE healthcare_database;
 
 ### 5. Configure `.env`
 
-This project loads environment variables using `python-dotenv` (see `load_dotenv()` in `config/settings.py`).
-
 Start by copying `.env.example` to `.env`, then fill in values.
 
-Create a `.env` file in the `healthcare_backend/` folder (same level as `manage.py`) with:
+Create a `.env` file in the `healthcare_backend/` folder with:
 
 ```env
 SECRET_KEY=your_secret_key
@@ -105,8 +103,6 @@ DB_NAME=healthcare_database
 DB_USER=postgres
 DB_PASSWORD=your_password
 ```
-
-> Note: `DB_HOST` and `DB_PORT` are currently hardcoded in `config/settings.py` (`localhost` / `5432`).
 
 ### 6. Run migrations
 
@@ -157,7 +153,7 @@ Authorization: Bearer <token>
 
 ---
 
-## 👤 Patient APIs
+## Patient APIs
 
 ### Add patient
 
