@@ -26,7 +26,7 @@ healthcare_backend/
 │
 ├── manage.py
 ├── requirements.txt
-├── .env               # local only (ignored by .gitignore)
+├── .env               # local only
 ├── .env.example       # safe to commit
 ├── README.md
 │
@@ -76,12 +76,6 @@ Activate it:
 source venv/Scripts/activate
 ```
 
-- Windows (PowerShell):
-
-```powershell
-venv\Scripts\Activate.ps1
-```
-
 ### 3. Install dependencies
 
 ```bash
@@ -113,15 +107,6 @@ DB_PASSWORD=your_password
 ```
 
 > Note: `DB_HOST` and `DB_PORT` are currently hardcoded in `config/settings.py` (`localhost` / `5432`).
-
-### Before pushing to GitHub
-
-- Never commit `.env` (it contains secrets). This repo includes a `.gitignore` that ignores it.
-- If you accidentally committed it before, untrack it and commit the removal:
-
-```bash
-git rm --cached .env
-```
 
 ### 6. Run migrations
 
