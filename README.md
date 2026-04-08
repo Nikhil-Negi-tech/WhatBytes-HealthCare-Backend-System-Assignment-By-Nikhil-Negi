@@ -145,7 +145,7 @@ Response:
 }
 ```
 
-👉 Use this token for all protected APIs:
+Use this token for all protected APIs:
 
 ```text
 Authorization: Bearer <token>
@@ -184,7 +184,7 @@ Authorization: Bearer <token>
 
 ---
 
-## 👨‍⚕️ Doctor APIs
+## Doctor APIs
 
 ### Add doctor
 
@@ -215,7 +215,7 @@ Authorization: Bearer <token>
 
 ---
 
-## 🔗 Mapping APIs (Patient ↔ Doctor)
+## Mapping APIs (Patient ↔ Doctor)
 
 ### Assign doctor to patient
 
@@ -242,7 +242,7 @@ Authorization: Bearer <token>
 
 ---
 
-## 🧪 Testing
+## Testing
 
 You can test APIs using:
 
@@ -254,7 +254,7 @@ You can test APIs using:
 
 # 🔥 Final result
 
-👉 You now have:
+ You now have:
 - clean structure  
 - proper documentation  
 - working backend  
