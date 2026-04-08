@@ -19,6 +19,41 @@ It allows users to:
 
 ---
 
+## Project Architecture
+
+```text
+healthcare_backend/
+│
+├── manage.py
+├── requirements.txt
+├── .env               # local only (ignored by .gitignore)
+├── .env.example       # safe to commit
+├── README.md
+│
+├── config/
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── asgi.py
+│   └── wsgi.py
+│
+├── accounts/
+│   ├── models.py
+│   ├── serializers.py
+│   ├── views.py
+│   ├── urls.py
+│   └── migrations/
+│
+└── core/
+    ├── models.py
+    ├── serializers.py
+    ├── views.py
+    ├── urls.py
+    └── migrations/
+```
+
+---
+
 ## Setup Instructions
 
 ### 1. Clone / open project
@@ -100,43 +135,6 @@ python manage.py migrate
 ```bash
 python manage.py runserver
 ```
-
----
-
-## Project Architecture
-
-```text
-healthcare_backend/
-│
-├── manage.py
-├── requirements.txt
-├── .env               
-├── .env.example       # safe to commit
-├── README.md
-│
-├── config/
-│   ├── __init__.py
-│   ├── settings.py
-│   ├── urls.py
-│   ├── asgi.py
-│   └── wsgi.py
-│
-├── accounts/
-│   ├── models.py
-│   ├── serializers.py
-│   ├── views.py
-│   ├── urls.py
-│   └── migrations/
-│
-└── core/
-	├── models.py
-	├── serializers.py
-	├── views.py
-	├── urls.py
-	└── migrations/
-```
-
----
 
 ## Authentication APIs
 
