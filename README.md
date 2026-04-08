@@ -238,14 +238,6 @@ You can test APIs using:
 
 ---
 
-## 🧠 Notes
-
-- Patients are linked to the logged-in user
-- JWT is required for all protected endpoints
-- Data is stored in PostgreSQL
-
----
-
 # 🔥 Final result
 
 👉 You now have:
