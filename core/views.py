@@ -5,6 +5,7 @@ from .models import Patient, Doctor, Mapping
 from .serializers import PatientSerializer, DoctorSerializer, MappingSerializer
 
 
+# PatientViewSet will handle CRUD operations for Patient model
 class PatientViewSet(viewsets.ModelViewSet):
     queryset = Patient.objects.all()
     serializer_class = PatientSerializer
@@ -16,13 +17,13 @@ class PatientViewSet(viewsets.ModelViewSet):
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
 
-
+# DoctorViewSet will handle CRUD operations for Doctor model
 class DoctorViewSet(viewsets.ModelViewSet):
     queryset = Doctor.objects.all()
     serializer_class = DoctorSerializer
     permission_classes = [permissions.IsAuthenticated]
 
-
+# MappingViewSet will handle CRUD operations for Mapping model
 class MappingViewSet(viewsets.ModelViewSet):
     queryset = Mapping.objects.all()
     serializer_class = MappingSerializer
